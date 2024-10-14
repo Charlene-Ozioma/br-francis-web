@@ -1,0 +1,141 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: red;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #444;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+  background-color: #555;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #777;
+}
+
+.sectionOne {
+  padding: 50px 0;
+  background-color: red;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Flexible grid for responsiveness */
+  gap: 20px;
+  padding: 0 50px;
+}
+
+.service {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.service:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.service-name {
+  background-color: #0d6efd; /* Blue header */
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px 15px;
+  border-bottom: 3px solid #0056b3;
+}
+
+.service-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.service-content {
+  padding: 20px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.service-content p {
+  margin: 0;
+}
+
+.service-learnMore {
+  display: block;
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 15px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+}
+
+.service-learnMore:hover {
+  background-color: #0056b3;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .services {
+      padding: 0 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #333;
+  color: white;
+  position:;
+  bottom: 0;
+  width: 100%;
+}

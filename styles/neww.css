@@ -1,0 +1,249 @@
+/* General Reset and Font */
+body {
+  font-family: 'Montserrat', sans-serif; /* Clean, modern sans-serif */
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7; /* Subtle light grey for corporate feel */
+}
+
+/* Header Styles */
+header {
+  text-align: center;
+  background-color: #2c3e50; /* Dark navy blue for a professional look */
+  padding: 20px 20px;
+  color: #ffffff; /* White text for contrast */
+}
+
+header h1 {
+  font-size: 2.5rem; /* Larger size for the welcome message */
+  font-weight: 700;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+header p {
+  font-size: 1.2rem; /* Slightly smaller than the heading */
+  margin-top: 0;
+  color: #ecf0f1; /* Light gray text for a subtle contrast */
+}
+
+/* Navigation Styles */
+nav {
+  background-color: #3498db; /* Bright, inviting blue for contrast */
+  padding: 20px 0;
+}
+
+nav ul {
+  list-style-type: none; /* Remove default list styling */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Center the navigation links */
+  gap: 30px; /* Space out the navigation items */
+}
+
+nav ul li {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+nav ul li a {
+  text-decoration: none; /* Remove the underline */
+  color: #ffffff; /* White text for visibility */
+  padding: 10px 20px;
+  background-color: #2980b9; /* Darker blue for the link background */
+  border-radius: 50px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #1b6f9b; /* Slightly darker blue on hover */
+  transform: scale(1.05); /* Small scale effect on hover */
+}
+.slide-cont {
+background-color:  ;
+}
+/* Slider Container */
+.slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Slider Styling */
+.slider {
+  display: flex;
+  width: 100%;
+  animation: slide 26s infinite;
+}
+
+/* Slide Styling */
+.slide {
+  position: relative;
+  min-width: 100%;
+  height: 360px;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Caption and Learn More Button Styling */
+.slider-caption {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: #1b6f9b; /* Slightly darker blue on hover */
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+.slider-caption p {
+  font-size: 1.5rem;
+  margin: 0;
+  font-family: Arial;
+}
+
+.learn-more {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.learn-more:hover {
+  background-color: #2980b9;
+}
+
+.sectionOne {
+  padding: 50px 0;
+}
+
+/* Main Section Layout */
+.sectionOne {
+  padding: 80px 0;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+/* Individual Service */
+.service {
+  background-color: #ffffff;
+  flex: 1;
+  min-width: 300px;
+  max-width: 32%;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 0;
+}
+
+.service:hover {
+  transform: translateY(-10px); /* Smooth lift effect on hover */
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+}
+
+/* Service Header */
+.service-name {
+  font-size: 1.4rem;
+  font-weight: 600;
+  background-color: #2c3e50; /* Dark navy blue for professionalism */
+  color: #ffffff;
+  padding: 20px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 8px 8px 0 0; /* Rounded corners at the top */
+}
+
+/* Service Image */
+.service-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 4px solid #2c3e50; /* Strong line separator */
+}
+
+/* Service Content */
+.service-content {
+  padding: 20px;
+  font-size: 1rem;
+  color: #333333;
+  line-height: 1.6;
+  text-align: left;
+  min-height: 120px;
+}
+
+/* Service Button */
+.service-learnMore {
+  display: inline-block;
+  margin-bottom: 4px;
+  background-color: #3498db; /* Elegant blue for a clean call to action */
+  color: #ffffff;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.service-learnMore:hover {
+  background-color: #2980b9;
+}
+
+/* Keyframes for Slider Animation */
+@keyframes slide {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(0); }
+  25% { transform: translateX(-100%); }
+  45% { transform: translateX(-100%); }
+  50% { transform: translateX(-200%); }
+  70% { transform: translateX(-200%); }
+  75% { transform: translateX(-300%); }
+  95% { transform: translateX(-300%); }
+  100% { transform: translateX(0); }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .services {
+      flex-direction: column;
+      gap: 20px;
+  }
+  
+  .service {
+      max-width: 100%;
+  }
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  header h1 {
+      font-size: 2rem; /* Slightly smaller font for mobile */
+  }
+
+  nav ul {
+      flex-direction: column; /* Stack links vertically on mobile */
+      gap: 15px; /* Reduce gap between links */
+  }
+}

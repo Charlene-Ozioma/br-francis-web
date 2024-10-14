@@ -1,0 +1,145 @@
+/* General Styles */
+body {
+  font-family: 'Merriweather', serif; /* Elegant, professional serif font */
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.sectionOne {
+  padding: 50px 0;
+  background-color: red;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  padding: 0 50px;
+}
+
+.service {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid #eaeaea;
+  transition: box-shadow 0.5s ease, transform 0.5s ease;
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.service:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  transform: translateY(-8px);
+}
+
+/* Header Styling */
+.service-name {
+  background-color: #3d3c40; /* Dark muted tone for an authoritative feel */
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 15px 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.service:hover .service-image img {
+  transform: scale(1.05); /* Slight zoom on hover for a dynamic feel */
+}
+
+.service-content {
+  padding: 20px 25px;
+  font-size: 1.05rem;
+  color: #5a5a5a;
+  line-height: 1.8;
+  text-align: justify;
+  position: relative;
+}
+
+.service-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background-color: #3d3c40;
+  border-radius: 2px;
+  margin-top: -10px;
+}
+
+/* Button Styling */
+.service-learnMore {
+  display: block;
+  margin: 0 auto;
+  background-color: #8a6d3b; /* Sophisticated brown-gold button */
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
+
+.service-learnMore:hover {
+  background-color: #6b5430;
+}
+
+/* Subtle Animation */
+.service {
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInUp {
+  from {
+      transform: translateY(30px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .services {
+      padding: 0 15px;
+  }
+  
+  .service-content {
+      padding: 15px;
+  }
+
+  .service-name {
+      font-size: 1.5rem;
+  }
+}
+
+/* Service Divider Line */
+.service::before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 4px;
+  background: #8a6d3b; /* Line color matching the button */
+  left: 10%;
+  bottom: 0;
+  border-radius: 2px;
+}

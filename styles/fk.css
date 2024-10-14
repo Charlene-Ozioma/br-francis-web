@@ -1,0 +1,209 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #2c3e50;
+  color:  #ffffff;
+  text-align: center;
+  padding: 50px 20px;
+
+}
+
+header h1 {
+  font-size: 2.5rem; /* Larger size for the welcome message */
+  font-weight: 700;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+header p {
+  font-size: 1.2rem; /* Slightly smaller than the heading */
+  margin-top: 0;
+  color: #ecf0f1; /* Light gray text for a subtle contrast */
+}
+
+/* Navigation Styles */
+nav {
+  background-color: #3498db; /* Bright, inviting blue for contrast */
+  padding: 20px 0;
+}
+
+nav ul {
+  list-style-type: none; /* Remove default list styling */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Center the navigation links */
+  gap: 30px; /* Space out the navigation items */
+}
+
+nav ul li {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+nav ul li a {
+  text-decoration: none; /* Remove the underline */
+  color: #ffffff; /* White text for visibility */
+  padding: 10px 20px;
+  background-color: #2980b9; /* Darker blue for the link background */
+  border-radius: 50px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #1b6f9b; /* Slightly darker blue on hover */
+  transform: scale(1.05); /* Small scale effect on hover */
+}
+
+.sectionOne {
+  padding: 50px 0;
+}
+
+.sectionOne {
+  padding: 80px 0;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  padding: 0 50px;
+}
+
+.hea {
+  text-align: center;
+  color: #F5F5F5;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  font: 700;
+  font-weight: bolder;
+  margin-top: 16px;
+  margin-bottom: 10px;
+}
+
+.service {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 0;
+}
+
+.service:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.service-name {
+  font-size: 1.4rem;
+  font-weight: 600;
+  background-color: #2c3e50; /* Dark navy blue for professionalism */
+  color: #ffffff;
+  padding: 20px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 8px 8px 0 0;
+}
+
+.service-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 4px solid #2c3e50;
+}
+
+.service-content {
+  padding: 20px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333333;
+  text-align: justify;
+  position: relative;
+}
+
+.service-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background-color: #14477b;
+  border-radius: 2px;
+  margin-top: -10px;
+}
+
+.service-content p {
+  margin: 0;
+}
+
+.service-learnMore {
+  display: inline-block;
+  margin: 15px auto;
+  background-color: #0056b3 ; /* Sophisticated brown-gold button */
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  letter-spacing: 1px;
+  font-size: 1rem;
+}
+
+.service-learnMore:hover {
+  background-color: #2980b9;
+}
+
+.service {
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInUp {
+  from {
+      transform: translateY(30px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .services {
+      padding: 0 15px;
+  }
+  
+  .service-content {
+      padding: 15px;
+  }
+
+  .service-name {
+      font-size: 1.5rem;
+  }
+}
+
+/* Service Divider Line */
+.service::before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 4px;
+  background-color: #14477b;
+  left: 10%;
+  bottom: 0;
+  border-radius: 2px;
+}
